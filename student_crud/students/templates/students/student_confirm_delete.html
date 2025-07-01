@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Delete Confirmation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fefefe;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            background-color: #fff;
+            padding: 30px 40px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        h2 {
+            color: #d32f2f;
+            margin-bottom: 20px;
+        }
+        button, a {
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        button {
+            background-color: #d32f2f;
+            color: #fff;
+        }
+        a {
+            background-color: #bbb;
+            color: #fff;
+        }
+        button:hover {
+            background-color: #b71c1c;
+        }
+        a:hover {
+            background-color: #999;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Are you sure you want to delete "{{ student.name }}"?</h2>
+        <form method="POST">
+            {% csrf_token %}
+            <button type="submit">Confirm</button>
+            <a href="{% url 'student_list' %}">Cancel</a>
+        </form>
+    </div>
+</body>
+</html>

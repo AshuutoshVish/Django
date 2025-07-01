@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Confirm Delete</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f7f7f7;
+      font-family: Arial, sans-serif;
+    }
+    .box {
+      background-color: #fff0f0;
+      padding: 30px;
+      border: 1px solid #e77;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+      max-width: 400px;
+    }
+    h2 {
+      margin-top: 0;
+      color: #b00020;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #d9534f;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      margin-right: 10px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    a {
+      text-decoration: none;
+      color: #333;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h2>Confirm Deletion</h2>
+    <p>Are you sure you want to delete <strong>{{ employee.name }}</strong>?</p>
+
+    <form method="post">
+      {% csrf_token %}
+      <button type="submit">Yes, Delete</button>
+      <a href="{% url 'employee_list' %}">Cancel</a>
+    </form>
+  </div>
+</body>
+</html>
