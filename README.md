@@ -1,5 +1,3 @@
-# Create the README.md content as a string and save it as a file
-readme_content = """
 # 📘 Student Enrollment System
 
 A Django-based web application to manage **students** and their **course enrollments**, demonstrating the use of **relational databases** with **Primary and Foreign Keys**, full **CRUD operations**, and a clean **admin panel**.
