@@ -1,0 +1,55 @@
+[
+    {
+        "stmt": "SELECT * FROM main_student;",
+        "header": [
+            "id",
+            "name",
+            "age",
+            "email",
+            "address",
+            "phone_number"
+        ],
+        "rows": [
+            [
+                "1",
+                "Abhi",
+                "15",
+                "abhi@gmail.com",
+                "Noida",
+                "1234567890"
+            ],
+            [
+                "2",
+                "Abhishek",
+                "25",
+                "abhishek@gmail.com",
+                "Noida 15",
+                "0987654321"
+            ],
+            [
+                "3",
+                "Ashu",
+                "22",
+                "ashu@gmail.com",
+                "Laxmi Nagar",
+                "0987654322"
+            ],
+            [
+                "4",
+                "Ashutosh Vishwakarma",
+                "25",
+                "ashusharma3535@gmail.com",
+                "Gurgaon",
+                "8881619966"
+            ],
+            [
+                "5",
+                "Ashutosh",
+                "25",
+                "ashusharma@gmail.com",
+                "Gorakhpur",
+                "8881119966"
+            ]
+        ]
+    }
+]

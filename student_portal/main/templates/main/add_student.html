@@ -1,0 +1,12 @@
+<!-- main/templates/main/add_student.html -->
+{% extends 'main/base.html' %}
+{% block title %}Add Student{% endblock %}
+{% block content %}
+<h2>Add Student</h2>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="btn btn-success">Submit</button>
+    <a href="{% url 'home' %}" class="btn btn-secondary">Back</a>
+</form>
+{% endblock %}
